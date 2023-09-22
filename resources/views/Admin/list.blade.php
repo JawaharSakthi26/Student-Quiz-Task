@@ -4,8 +4,7 @@
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h1>Quiz Title List</h1>
         <div class="d-flex">
-            <a href="{{route('admin.create')}}" class="btn btn-success me-2">Add New Quiz</a>
-            <a href="#" class="btn btn-primary me-2">User Page</a>
+            <a href="{{route('admin.create')}}" class="btn btn-primary me-2">Add New Quiz</a>
         </div>
     </div>
     <table class="table table-dark table-sm">

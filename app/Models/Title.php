@@ -13,12 +13,13 @@ class Title extends Model
         'quiz_title'
     ];
 
-    public function questions() {
+    public function questions() 
+    {
         return $this->hasMany(Question::class);
     }
 
-    // public function exams()
-    // {
-    //     return $this->hasMany(Exam::class);
-    // }
+    public function exams()
+    {
+        return $this->hasMany(Exam::class);
+    }
 }

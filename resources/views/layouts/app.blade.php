@@ -11,7 +11,10 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <!-- Scripts -->
     <!-- jQuery -->
+    <link rel="stylesheet" href="{{ asset('/assets/plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/adminlte.min.css') }}">
     <script src="{{ asset('/assets/plugins/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('/assets/plugins/jquery-validation/jquery.validate.min.js') }}"></script>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
@@ -73,5 +76,7 @@
             @yield('content')
         </main>
     </div>
+    <script src="{{ asset('/assets/js/adminlte.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/adminlte.js') }}"></script>
 </body>
 </html>
