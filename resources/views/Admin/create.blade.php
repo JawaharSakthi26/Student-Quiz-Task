@@ -110,6 +110,7 @@
 
     $('#add-questions').click(function() {
         addquesandans();
+        validateAnswer();
     });
 
     $('#quiz-container').on('click', '.add-answer', function() {
@@ -124,7 +125,7 @@
 
     $('#quiz-container').on('click', '.remove-answer', function() {
         $(this).parent().remove();
-        validateAnswer(quesIndex);
+        validateAnswer();
     });
 
     $('#quiz-form').validate({
